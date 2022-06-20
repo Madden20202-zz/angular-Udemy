@@ -12,11 +12,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
 
-  // This set up allows the Model (the magician)
-  // and the View (the magician's stage) is where it is 
-  // shown. This is done so that the logic can be clearly 
-  // defined and set up, with as little hassle as possible.
-  // Stream lining and allowing the dev cycle to be consistent
+  // Let's turn the title into an object and see what happens
 
-  title = 'Angular Course from Udemy';
+  data = {
+    title: "Angular Course from Udemy"
+  }
 }
