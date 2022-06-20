@@ -12,11 +12,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
 
-  // This is a basic use of a variable! 
+  // This set up allows the Model (the magician)
+  // and the View (the magician's stage) is where it is 
+  // shown. This is done so that the logic can be clearly 
+  // defined and set up, with as little hassle as possible.
+  // Stream lining and allowing the dev cycle to be consistent
 
-  // Variables are ways to store data 
-  // that can be shown another time,
-
-  // The title now is called and shows as such!
   title = 'Angular Course from Udemy';
 }
