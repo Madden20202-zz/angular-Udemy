@@ -12,6 +12,6 @@ export class AppComponent {
   // Variables are ways to store data 
   // that can be shown another time,
 
-  // Change the title to show how it works
-  title = 'angular-Udemy';
+  // The title now is called and shows as such!
+  title = 'Angular Course from Udemy';
 }
