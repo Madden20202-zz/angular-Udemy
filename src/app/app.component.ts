@@ -15,6 +15,7 @@ export class AppComponent {
   // Let's turn the title into an object and see what happens
 
   data = {
+    // This did not work because this has to be called in the HTML file
     title: "Angular Course from Udemy"
   }
 }
