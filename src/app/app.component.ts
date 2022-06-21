@@ -13,7 +13,7 @@ export class AppComponent {
 
   // The first is Templates:
 
-  //
+  // Let's show it off with an input tag
 
   // Why is it so good?
 
