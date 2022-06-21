@@ -20,4 +20,13 @@ export class AppComponent {
   data = {
     title: "Angular Course from Udemy"
   }
+
+  // Now the method will go under everything
+  // in order to keep the code organized
+  // But importantly, the view is now requesting
+  // soemthing for the model to do
+
+  soundAlarm() {
+    alert("Why did you click this? I thought I hid it well!")
+  }
 }
