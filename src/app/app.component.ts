@@ -12,6 +12,8 @@ export class AppComponent {
   // are provided, and come as a host of things. 
 
   // Why is it so good?
+  // It gives a lot of strong, and easy to use tools 
+  // without needed a large import pool
 
   data = {
     title: "Angular Course from Udemy"
