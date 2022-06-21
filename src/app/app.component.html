@@ -1,49 +1,6 @@
 
 <!-- This is for routing, which is covered later -->
 <router-outlet></router-outlet>
+<!-- Let's change this up so it displays cards showing classes -->
 
-
-<h1> Welcome to {{ data.title }} </h1>
-
-<!-- Now lets link the data object we made -->
-
-<!-- 
-  This is not following angular sytax though, 
-  angular likes to use [] to designate different 
-  items of use
-
-  For example, this "Test" is now an 
-  expression, that can be now manipulated rather 
-  than hard coded in, but the code won't compile because 
-  "Test" is not within the app.component.ts file
-
-  Change it to data.title though, and it will compile
-
-  This is because the view is pulling information from 
-  the model, through a clear and concise manner. Remember 
-  that all of this is possible because it is linked via
-  the app.component
-
-  But what if I want it to be a string? Double wrap the
-  text in quotations (double then single to keep it ledgible) 
-  then watch it compile and show, but this usually is not used. 
-
-  Why not use it? Simple, there's an easier way to write this, 
-  and if you use angular, you use it for the modularity and 
-  to reuse code regularly or pass data as it updates
-
-  now we can use # to signify that a template reference 
-  is being used to change the value of something and can 
-  perform this change in real time! But it has to be passed 
-  to the method that is using it via the value keyword
- -->
-<input class="demo" (keyup)="onKeyUp(titleInput.value)" [value]="data.title" #titleInput>
-
-<!-- 
-  A core strength of angular is the ability to handle
-  in browser events within the app itself. So let's add 
-  a link to the project and see how it works. 
-
-  You place (click) within a tag and link it to a method
- -->
-<p class="demo" (click)="soundAlarm()"> Am I normal?</p>
+<app-course-card></app-course-card>

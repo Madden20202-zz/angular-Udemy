@@ -1,0 +1,22 @@
+.course-card {
+    border: 2em solid aquamarine;
+    border-radius: 5em;
+    padding: 3em;
+    margin: 5em;
+}
+
+.course-title {
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+}
+.course-disc {
+    text-align: justify;
+    font-size: 16px;
+    font-family: 'Courier New', Courier, monospace;
+}
+.course.photo {
+    height: 300px;
+    width: 100px;
+}
