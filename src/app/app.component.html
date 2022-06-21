@@ -6,4 +6,18 @@
 <h1> Welcome to {{ data.title }} </h1>
 
 <!-- Now lets link the data object we made -->
-<input class="demo" value="Test">
+
+<!-- 
+  This is not following angular sytax though, 
+  angular likes to use [] to designate different 
+  items of use
+
+  For example, this "Test" is now an 
+  expression, that can be now manipulated rather 
+  than hard coded in, but the code won't compile because 
+  "Test" is not within the app.component.ts file
+
+  Change it to data.title though, and it will compile
+
+ -->
+<input class="demo" [value]="data.title">
