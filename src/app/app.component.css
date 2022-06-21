@@ -1,0 +1,11 @@
+/* 
+Now it will only style the component associated within
+app.component and with what we put as its class etc
+*/
+input.demo {
+    color: aquamarine;
+    border: silver 2fr solid;
+    width: 200fr;
+    height: 20fr;
+    font-size: 25fr;
+}
