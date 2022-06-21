@@ -8,6 +8,12 @@ import { Component } from '@angular/core';
 export class AppComponent {
 
   // What is Angular Core?
+  // Angular Core is the basic features that 
+  // are provided, and come as a host of things. 
+
+  // The first is Templates:
+
+  //
 
   // Why is it so good?
 
