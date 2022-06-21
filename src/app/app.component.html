@@ -19,5 +19,13 @@
 
   Change it to data.title though, and it will compile
 
+  This is because the view is pulling information from 
+  the model, through a clear and concise manner. Remember 
+  that all of this is possible because it is linked via
+  the app.component
+
+  But what if I want it to be a string? Double wrap the
+  text in quotations (double then single to keep it ledgible) 
+  then watch it compile and show
  -->
-<input class="demo" [value]="data.title">
+<input class="demo" [value]="'Test'">
