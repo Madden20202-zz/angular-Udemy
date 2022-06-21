@@ -31,8 +31,13 @@
   Why not use it? Simple, there's an easier way to write this, 
   and if you use angular, you use it for the modularity and 
   to reuse code regularly or pass data as it updates
+
+  now we can use # to signify that a template reference 
+  is being used to change the value of something and can 
+  perform this change in real time! But it has to be passed 
+  to the method that is using it via the value keyword
  -->
-<input class="demo" [value]="'Test'">
+<input class="demo" (keyup)="onKeyUp(titleInput.value)" [value]="data.title" #titleInput>
 
 <!-- 
   A core strength of angular is the ability to handle
