@@ -28,6 +28,12 @@ export class AppComponent {
   // This is called using (keyup) in the tag and a
   // template reference using # 
 
+  // When the data is modified, the model updates, 
+  // which is then reflected into the view. Notice 
+  // that the whole process did not require any logic
+  // to be implimented to start it off. This just is done
+  // on its own if done right!!
+
   onKeyUp(newTitle: string) {
     this.data.title = newTitle
   }
