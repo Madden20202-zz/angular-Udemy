@@ -14,10 +14,12 @@ export class NoteCardComponent implements OnInit {
     explore it with a note taking app
 
     First, a variable has to be made that will 
-    contain the information
+    contain the information. but with the current
+    lesson we will make one fo reach note
   */
 
-    dataCard = Notes[0]; 
+    groceryList = Notes[0]
+    phoneCard = Notes[1]
 
   constructor() { }
 
