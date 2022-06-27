@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Notes } from 'src/environments/db-data';
 
 @Component({
   selector: 'app-root',
@@ -18,6 +19,9 @@ export class AppComponent {
   data = {
     title: "Angular Course from Udemy"
   }
+  
+  groceryList = Notes[0]
+  phoneCard = Notes[1]
 
   // Now the method will go under everything
   // in order to keep the code organized

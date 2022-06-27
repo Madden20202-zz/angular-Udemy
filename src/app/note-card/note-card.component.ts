@@ -1,5 +1,4 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { Notes } from 'src/environments/db-data';
 
 @Component({
   selector: 'app-note-card',
@@ -22,10 +21,12 @@ export class NoteCardComponent implements OnInit {
     added will just not be shown
 
     What if we wanna pass it as an input?
+    All that has to be done is add a variable that 
+    follows @Input(), which tells it to expect 
+    input from somewhere and use it later
   */
 
-    groceryList = Notes[0]
-    phoneCard = Notes[1]
+    @Input() title?: string
 
   constructor() { }
 
