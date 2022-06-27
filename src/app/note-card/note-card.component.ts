@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { Notes } from 'src/environments/db-data';
 
 @Component({
   selector: 'app-note-card',
@@ -27,6 +28,9 @@ export class NoteCardComponent implements OnInit {
   */
 
     @Input() title?: string
+
+    groceryList = Notes[0]
+    phoneCard = Notes[1]
 
   constructor() { }
 
