@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter } from '@angular/core';
 import { Notes } from 'src/environments/db-data';
 
 @Component({
@@ -8,13 +8,7 @@ import { Notes } from 'src/environments/db-data';
 })
 export class AppComponent {
 
-  // What is Angular Core?
-  // Angular Core is the basic features that 
-  // are provided, and come as a host of things. 
-
-  // Why is it so good?
-  // It gives a lot of strong, and easy to use tools 
-  // without needed a large import pool
+  courseSelected = new EventEmitter()
   
   groceryList = Notes[0]
   phoneCard = Notes[1]
@@ -36,6 +30,9 @@ export class AppComponent {
     that the whole process did not require any logic
     to be implimented to start it off. This just is done
     on its own if done right!!
+
+    Now let's add the custom event, and keep life 
+    interesting for the user
   */
 
     onNoteClicked() {

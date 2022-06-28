@@ -16,8 +16,11 @@
     note will be given different actions
     based on the click, but other events 
     can be added, just within the parathesis
+
+    Let's make a custom event, to make 
+    the component even more unique
 -->
 
-<app-note-card (click)="onNoteClicked()" [noteCard]="groceryList"></app-note-card>
+<app-note-card (noteSelected)="onNoteClicked()" [noteCard]="groceryList"></app-note-card>
 
 <app-note-card (click)="onNoteClicked()"[noteCard]="phoneCard"></app-note-card>
