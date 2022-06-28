@@ -2,10 +2,16 @@
     This now will use the variable that 
     was made to call the information and 
     display it for the user
+
+    We can also give methods to items,
+    and let users interact more with 
+    the code base. To demonstrate, the 
+    button will be given different actions
+    based on the click
  -->
 
 <h1> {{ title }} </h1>
 
 <p> {{ content }} </p>
 
-<button>Check Note</button>
+<button (click)="buttonClicked()">Check Note</button>

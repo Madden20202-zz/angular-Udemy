@@ -34,4 +34,8 @@ export class NoteCardComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  buttonClicked() {
+    alert("The button was clicked!")
+  }
+
 }
