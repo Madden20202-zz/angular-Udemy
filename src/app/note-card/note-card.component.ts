@@ -40,6 +40,13 @@ export class NoteCardComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  /*
+    This now will return a json-esq response of the noteCard,
+    which could be sent to an api or to another portion 
+    of the app. Notice though that the parent calls the 
+    function from the child, and moves ahead with the result 
+    of the custom event
+  */
   onNoteClicked() {
     console.log("The task would show as done")
 
