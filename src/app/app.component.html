@@ -18,9 +18,13 @@
     can be added, just within the parathesis
 
     Let's make a custom event, to make 
-    the component even more unique
+    the component even more unique, and 
+    make sure that something is happening
+    on all levels. This ensures that values
+    would update, and what the user is trying 
+    to do will actually happen
 -->
 
-<app-note-card (noteSelected)="onNoteClicked()" [noteCard]="groceryList"></app-note-card>
+<app-note-card (noteCLicked)="onNoteClicked($event)" [noteCard]="groceryList"></app-note-card>
 
-<app-note-card (click)="onNoteClicked()"[noteCard]="phoneCard"></app-note-card>
+<app-note-card (noteCLicked)="onNoteClicked($event)" [noteCard]="phoneCard"></app-note-card>

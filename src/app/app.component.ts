@@ -1,5 +1,6 @@
-import { Component, EventEmitter } from '@angular/core';
+import { Component } from '@angular/core';
 import { Notes } from 'src/environments/db-data';
+import { Note } from './note-card/note-card.model';
 
 @Component({
   selector: 'app-root',
@@ -7,8 +8,6 @@ import { Notes } from 'src/environments/db-data';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-
-  courseSelected = new EventEmitter()
   
   groceryList = Notes[0]
   phoneCard = Notes[1]
@@ -35,11 +34,8 @@ export class AppComponent {
     interesting for the user
   */
 
-    onNoteClicked() {
-      alert("A note was clicked!")
-    }
-
-  soundAlarm() {
-    alert("Why did you click this? I thought I hid it well!")
+  onNoteClicked(noteCard: Note) {
+    console.log(noteCard)
   }
+
 }

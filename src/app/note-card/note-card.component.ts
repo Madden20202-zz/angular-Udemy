@@ -1,4 +1,10 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { 
+  Component, 
+  OnInit, 
+  Input, 
+  Output, 
+  EventEmitter 
+} from '@angular/core';
 import { Note } from './note-card.model';
 
 @Component({
@@ -20,13 +26,24 @@ export class NoteCardComponent implements OnInit {
     All that has to be done is add a variable that 
     follows @Input(), which tells it to expect 
     input from somewhere and use it later
+
+    Now let's add the custom event, and keep life 
+    interesting for the user
   */
 
-    @Input() noteCard!: Note
+  @Input() noteCard!: Note
+
+  @Output() noteCLicked = new EventEmitter<Note>()
 
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  onNoteClicked() {
+    console.log("The task would show as done")
+
+    this.noteCLicked.emit(this.noteCard)
   }
 
 }
