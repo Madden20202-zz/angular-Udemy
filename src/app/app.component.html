@@ -1,6 +1,14 @@
 
 <!-- This is for routing, which is covered later -->
 <router-outlet></router-outlet>
-<!-- Let's change this up so it displays cards showing classes -->
+<!-- 
+    Often, the data needs input from the user 
+    So let's explore it using the idea of a 
+    note taking app
 
-<app-course-card></app-course-card>
+    Pass the value along that is needed, 
+    and make sure to follow through with 
+    the input and here
+-->
+
+<app-note-card [title]="groceryList.title" [content]="groceryList.content"></app-note-card>
