@@ -10,10 +10,14 @@
     and make sure to follow through with 
     the input 
 
-    Let's also look at how things can change 
-    through user based events
+    We can also give methods to items,
+    and let users interact more with 
+    the code base. To demonstrate, the 
+    note will be given different actions
+    based on the click, but other events 
+    can be added, just within the parathesis
 -->
 
-<app-note-card [noteCard]="groceryList"></app-note-card>
+<app-note-card (click)="onNoteClicked()" [noteCard]="groceryList"></app-note-card>
 
-<app-note-card [noteCard]="phoneCard"></app-note-card>
+<app-note-card (click)="onNoteClicked()"[noteCard]="phoneCard"></app-note-card>

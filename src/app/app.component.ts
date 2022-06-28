@@ -15,10 +15,6 @@ export class AppComponent {
   // Why is it so good?
   // It gives a lot of strong, and easy to use tools 
   // without needed a large import pool
-
-  data = {
-    title: "Angular Course from Udemy"
-  }
   
   groceryList = Notes[0]
   phoneCard = Notes[1]
@@ -42,9 +38,9 @@ export class AppComponent {
     on its own if done right!!
   */
 
-  onKeyUp(newTitle: string) {
-    this.data.title = newTitle
-  }
+    onNoteClicked() {
+      alert("A note was clicked!")
+    }
 
   soundAlarm() {
     alert("Why did you click this? I thought I hid it well!")
