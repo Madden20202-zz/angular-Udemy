@@ -1,7 +1,7 @@
 <!-- 
     This now will use the variable that 
     was made to call the information and 
-    display it for the user
+    display it for the user via the model
 
     We can also give methods to items,
     and let users interact more with 
@@ -11,8 +11,8 @@
     can be added, just within the parathesis
  -->
 
-<h1> {{ title }} </h1>
+<h1> {{ noteCard.title }} </h1>
 
-<p> {{ content }} </p>
+<p> {{ noteCard.content }} </p>
 
 <button (click)="buttonClicked()">Check Note</button>
