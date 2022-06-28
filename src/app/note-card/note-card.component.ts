@@ -33,7 +33,13 @@ export class NoteCardComponent implements OnInit {
 
   @Input() noteCard!: Note
 
-  @Output() noteCLicked = new EventEmitter<Note>()
+  @Output(
+    /* 
+    You can put another name that 
+    the rest of the code would use 
+    here but idk why you would
+    */
+  ) noteCLicked = new EventEmitter<Note>()
 
   constructor() { }
 
@@ -48,6 +54,9 @@ export class NoteCardComponent implements OnInit {
     of the custom event due to how this is programmed.
     Unsure if this is ideal, since usually information should 
     not go upstream, so testing will have to occur in the spare time
+
+    Note here that there was no special event needed here, since it 
+    remains a basic method, and merely emits the special event
   */
   onNoteClicked() {
     console.log("The task would show as done")
