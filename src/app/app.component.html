@@ -23,6 +23,11 @@
     on all levels. This ensures that values
     would update, and what the user is trying 
     to do will actually happen
+
+    Note that the ($event) is in essence acting
+    as a wild card, letting the program know 
+    it is using a custom event, all thanks to 
+    the @Output feature in angular core
 -->
 
 <app-note-card (noteCLicked)="onNoteClicked($event)" [noteCard]="groceryList"></app-note-card>

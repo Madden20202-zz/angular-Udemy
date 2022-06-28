@@ -45,7 +45,9 @@ export class NoteCardComponent implements OnInit {
     which could be sent to an api or to another portion 
     of the app. Notice though that the parent calls the 
     function from the child, and moves ahead with the result 
-    of the custom event
+    of the custom event due to how this is programmed.
+    Unsure if this is ideal, since usually information should 
+    not go upstream, so testing will have to occur in the spare time
   */
   onNoteClicked() {
     console.log("The task would show as done")
