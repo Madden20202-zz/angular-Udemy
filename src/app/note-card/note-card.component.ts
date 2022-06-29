@@ -31,6 +31,8 @@ export class NoteCardComponent implements OnInit {
     interesting for the user
   */
 
+  @Input() noteIndex!: number
+
   @Input() noteCard!: Note
 
   @Output() noteCLicked = new EventEmitter<Note>()

@@ -44,6 +44,7 @@
 
 <app-note-card 
     (noteCLicked)="onNoteClicked($event)"
-    *ngFor="let noteCard of notes; index"
+    *ngFor="let noteCard of notes; index as i"
     [noteCard]="noteCard"
+    [noteIndex]="i +1"
     ></app-note-card>
