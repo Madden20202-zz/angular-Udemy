@@ -33,13 +33,7 @@ export class NoteCardComponent implements OnInit {
 
   @Input() noteCard!: Note
 
-  @Output(
-    /* 
-    You can put another name that 
-    the rest of the code would use 
-    here but idk why you would
-    */
-  ) noteCLicked = new EventEmitter<Note>()
+  @Output() noteCLicked = new EventEmitter<Note>()
 
   constructor() { }
 
@@ -47,7 +41,7 @@ export class NoteCardComponent implements OnInit {
   }
 
   /*
-    This now will return a json-esq response of the noteCard,
+    This now will return an object response of the noteCard,
     which could be sent to an api or to another portion 
     of the app. Notice though that the parent calls the 
     function from the child, and moves ahead with the result 

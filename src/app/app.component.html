@@ -28,6 +28,12 @@
     as a wild card, letting the program know 
     it is using a custom event, all thanks to 
     the @Output feature in angular core
+
+    Now this is nice but people take lots of notes,
+    and hard coding every note is just ridiculous. 
+    So let's make a way to print them all out via
+    the model Note and ngFor, one of the most commonly
+    used core directives
 -->
 
 <app-note-card (noteCLicked)="onNoteClicked($event)" [noteCard]="groceryList"></app-note-card>
