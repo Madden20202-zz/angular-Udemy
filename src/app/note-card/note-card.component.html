@@ -2,10 +2,30 @@
     This now will use the variable that 
     was made to call the information and 
     display it for the user via the model
+
+    A small note, if you have an undefined value
+    within the database, all of this would crash 
+    without the ?, since it can not read the values 
+    of an undefined value
  -->
 
-<h1> {{ noteIndex + ": " + noteCard.title }} </h1>
+<h1> {{ noteIndex + ": " + noteCard?.title }} </h1>
 
-<p> {{ noteCard.content }} </p>
+<p> {{ noteCard?.content }} </p>
 
-<button (click)="onNoteClicked()">Task Done</button>
+<!-- 
+    Let's put the if here, where if the 
+    task is done then it is gone 
+    note that it makes the button 
+    NOT EXIST if the ngIf condition is met
+
+    note that ngIf will always try to correct 
+    any JS statement within it to a boolean 
+    value, so try to think ahead and make 
+    it be a boolean value, otherwise the 
+    code will be far harder to read 
+
+    But this code is not making sense, so let's 
+    make a method to make it make more sense
+-->
+<button *ngIf="checkNoteStatus()" (click)="onNoteClicked()">Task Done</button>

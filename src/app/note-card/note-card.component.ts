@@ -55,9 +55,11 @@ export class NoteCardComponent implements OnInit {
     remains a basic method, and merely emits the special event
   */
   onNoteClicked() {
-    console.log("The task would show as done")
-
     this.noteCLicked.emit(this.noteCard)
+  }
+
+  checkNoteStatus() {
+    return this.noteCard.complete == false
   }
 
 }
