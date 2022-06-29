@@ -9,5 +9,10 @@ export const Notes: any = [
         id: 2,
         title: "Phone Number",
         content: "089-073-33220"
+    },
+    // Make one without content
+    {
+        id:3,
+        title: "Future Note"
     }
 ]
