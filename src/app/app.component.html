@@ -34,6 +34,14 @@
     So let's make a way to print them all out via
     the model Note and ngFor, one of the most commonly
     used core directives
+
+    ngFor is a structural directive, hence it helps
+    change up how the structure is laid out and gives
+    information for it as needed
 -->
 
-<app-note-card (noteCLicked)="onNoteClicked($event)" [noteCard]="notes"></app-note-card>
+<app-note-card 
+    (noteCLicked)="onNoteClicked($event)"
+    *ngFor="let noteCard of notes"
+    [noteCard]="noteCard"
+    ></app-note-card>
