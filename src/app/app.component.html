@@ -37,11 +37,13 @@
 
     ngFor is a structural directive, hence it helps
     change up how the structure is laid out and gives
-    information for it as needed
+    information for it as needed. It also comes with 
+    special features, such as index,  
+
 -->
 
 <app-note-card 
     (noteCLicked)="onNoteClicked($event)"
-    *ngFor="let noteCard of notes"
+    *ngFor="let noteCard of notes; index"
     [noteCard]="noteCard"
     ></app-note-card>
