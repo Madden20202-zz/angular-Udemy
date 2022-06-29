@@ -8,5 +8,5 @@
 
 <p> {{ noteCard.content }} </p>
 
-<!-- Let's put the if here in case it is completed -->
-<button *ngIf="" (click)="onNoteClicked()">Task Done</button>
+<!-- Let's put the if here, where if the task is done then it is gone -->
+<button *ngIf="noteCard.complete false" (click)="onNoteClicked()">Task Done</button>

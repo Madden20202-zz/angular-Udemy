@@ -3,7 +3,7 @@ export const Notes: any = [
         id: 1,
         title: "Grocery List",
         content: "I need, eggs, butter, and coffee",
-        complete: false
+        complete: true
     },
 
     {
@@ -17,6 +17,6 @@ export const Notes: any = [
         id:3,
         title: "Future Note",
         content: "In the future, I hope all is better",
-        complete: false
+        complete: true
     }
 ]
