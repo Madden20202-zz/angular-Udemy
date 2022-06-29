@@ -58,4 +58,8 @@ export class NoteCardComponent implements OnInit {
     this.noteCLicked.emit(this.noteCard)
   }
 
+  checkNoteStatus() {
+    return this.noteCard.complete == false
+  }
+
 }

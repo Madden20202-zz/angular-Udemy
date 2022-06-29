@@ -19,5 +19,8 @@
     value, so try to think ahead and make 
     it be a boolean value, otherwise the 
     code will be far harder to read 
+
+    But this code is not making sense, so let's 
+    make a method to make it make more sense
 -->
-<button *ngIf="noteCard.complete false" (click)="onNoteClicked()">Task Done</button>
+<button *ngIf="checkNoteStatus()" (click)="onNoteClicked()">Task Done</button>
