@@ -8,5 +8,16 @@
 
 <p> {{ noteCard.content }} </p>
 
-<!-- Let's put the if here, where if the task is done then it is gone -->
+<!-- 
+    Let's put the if here, where if the 
+    task is done then it is gone 
+    note that it makes the button 
+    NOT EXIST if the ngIf condition is met
+
+    note that ngIf will always try to correct 
+    any JS statement within it to a boolean 
+    value, so try to think ahead and make 
+    it be a boolean value, otherwise the 
+    code will be far harder to read 
+-->
 <button *ngIf="noteCard.complete false" (click)="onNoteClicked()">Task Done</button>
