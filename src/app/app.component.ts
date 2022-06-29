@@ -8,31 +8,24 @@ import { Note } from './note-card/note-card.model';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+
   
-  groceryList = Notes[0]
-  phoneCard = Notes[1]
-
   /*
-    Now the method will go under everything
-    in order to keep the code organized
-    But importantly, the view is now requesting
-    soemthing for the model to do
+    Let's talk about refactoring. Refactoring
+    is the name given to when code - usually old 
+    and/or does not perform its job as efficiently 
+    as it should - is then rewritten to follow a new
+    design philosophy, or just streamlined
 
-    Can it modify things in real time though? 
-    Yes! Let's change the data.title value 
+    This code needs to be streamlined badly, so let's 
+    do so using ngIf and the model file we made awhile ago
 
-    This is called using (keyup) in the tag and a
-    template reference using # 
-
-    When the data is modified, the model updates, 
-    which is then reflected into the view. Notice 
-    that the whole process did not require any logic
-    to be implimented to start it off. This just is done
-    on its own if done right!!
-
-    Now let's add the custom event, and keep life 
-    interesting for the user
+    This starts with passing the whole of it over, so that 
+    all of the information can be filtered rather than needing
+    to be hard coded in, already a much bigger improvement
   */
+
+  notes = Notes
 
   onNoteClicked(noteCard: Note) {
     console.log(noteCard)
